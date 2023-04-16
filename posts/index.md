@@ -1,57 +1,110 @@
-## What is MindStone?
-MindStone is a free open-source alternative solution to [Obsidian Publish](https://obsidian.md/publish)
 
-Here how it look like once published:
+# Print:
 
-![](/images/CleanShot%202022-04-20%20at%2008.34.17@2x.png)
+###### Usage: 
+`print("Text/Numbers Here")`
+`print(1+1)`
+`print(*Variable Name*)`
 
-This website include a published version of default Obsidian Help vault, [[Start here]]
+`print ("Hello World")`      
+Displays Hello World in the terminal
 
-**MindStone features:**
+###### Pro tip: Python Has A In-Built Calculator If You Are Lazy
 
--  ✅ **Drop-in** support for (default) **Obsidian Vault** 
--  ✅ `[[Wiki Link]]` built-in support
--  ✅ **Folder-base** navigation side bar
--  ✅ Backlink support out of the box
--  ✅ Interactive Graph view 
--  ✅ **Easy to deploy** to Netlify, Vercel...
+`print (“21+2 equals to”, 21 + 2)`
+Displays 21+2 equals to (the answer of 21 + 2) 
 
-## Getting started
-### Run on your local machine
+You can use brackets for calculations like in real life calculations like:
 
-Steps to run it on your local machine:
-1. Clone this [Github repo](https://github.com/TuanManhCao/digital-garden)
-2. Install [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable) package manager 
-3. Copy all of your **markdown** file (`.md` only) and folder to `/posts/` **except** `/posts/index.md` file
-4. Go to root folder of your project, run `yarn && yarn run dev`
-5. Open this link in your browser http://localhost:3000/ 
+`print ((1000*3)+790)`
+Plus is +
+Minus is -
+Times is x
+Divide is /
+Equal is == **MUST BE TWO EQUALS!!!**
 
-If you prefer video content have a look at my 📺 [walk through video](https://youtu.be/7_SmWA-_Wx8) 
+Advanced Code
 
-### Publish to the internet
+edison = 250
+print ("pro", "level", edison*3) = displays pro level 750
+print (pro, "level", edison*3)    = displays skilled level 750 (pro is a variable set to the text “skilled”)
 
-Setup environment (with Netlify)
-1. Create your Github account and clone [my repository](https://github.com/TuanManhCao/digital-garden)
-2. Create Netlify account and follow [this instruction](https://www.netlify.com/blog/2020/11/30/how-to-deploy-next.js-sites-to-netlify/) 
-
-
-Your normal workflow for publishing content, after initial setup is:
-1. Simply writing your content in Obisidian (or your favourite Markdown editor)
-2. Commit your changes and Push it to your Github repo
+Booleans (True or False):
+>>> print (bool(2+2 == 4))
+True (answer is correct
+>>> print (bool(20+20 == 30))  =  checks if 20 + 20 is 30
+False (answer is incorrect)
 
 
-If you prefer video content, watch my 📺 [walk through video](https://youtu.be/n8QDO6l64aw) here 
+# IF Statements
 
-These are just some basic features for MindStone v1, many more are coming (if I find enough of interest and this will probably a premium/paid option):
-- 🎯 Obsidian, Notion, VSCode Plugin 
-- 🎯 Page Preview (like Obsidian Core plugin)
-- 🎯 Andy Sliding pane
-- 🎯 Full text search with `Cmd + K`
-- 🎯 Infinite canvas for browsing through notes and connections
+**Example**
+world = 256
+if (128+128 == world):
+    print (“Hello World”)
+else:
+    print (“Bye World”)                   
 
-### Some know issues
-This an early version of MindStone, which mean there are bugs and issues. Below are some known issues, that I plan to work on:
-- Image link in wiki link style is not supported yet. `![[Image_link.png]]` will not work yet.  see work around below
-- Graphview does not load when clicking on side-bar or click node on graphview, browser reload will refresh it state
-- Graph view layout and interaction is still very rough. More UI/UX improvements are needed.
-- Transclusion is not working yet.
+Data Types:
+Integer – Any non-decimal numbers
+Boolean – True/False
+Floating Point – Decimal numbers
+String – Text
+
+Input:
+hello = input (“Hello, how are you doing today? “)
+Can have more than one input like:
+name = input (“What is your name? “)
+favouritefood = input (“What is your favourite food? “)
+Then:
+print (hello) – will print the input you put in hello
+You can use everything we learnt above here too, like:
+print (“Hello, nice to meet you”, (name))
+Guess the number minigame (puts what we learnt to use):
+My own testing version:
+n = random.randint (1,20)
+
+guess = input ("Guess a number from 1-20 ")
+
+if (guess == n):
+    print ("You got it")
+else:
+    print ("Nope, try again")
+
+
+Updated version (with teacher’s help):
+count = 0
+
+import random
+
+number = random.randint(1,20)
+
+while (True):
+    guess = input("Guess a random number between 1-20 ")
+    if (guess.isdigit() == True):
+       print("It is a number!")
+    if (int(guess) == int(number)):
+        print ("Congratulations, you are right!")
+        break;
+    else:
+        print ("Wrong... try again.")
+        count = (count+1)
+        print ("You have tried", count, "times.")
+
+
+
+If/Else Statements:
+ 
+Loops:
+While Loop (from game code): 
+guess = “not a number”
+while(guess != number):
+
+Another is For Loop
+Functions:
+To run your code in a more orderly manner.
+Define:
+def division(first, second)
+def edison(first, second, third)
+Use:
+output = division(number, 2)
