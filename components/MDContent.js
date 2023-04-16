@@ -41,6 +41,10 @@ function MDContent({content, backLinks, handleOpenNewContent}) {
     return (
 
         <div className="markdown-rendered">
+            <Alert severity="info">
+                <AlertTitle>Missing things?</AlertTitle>
+                <strong>Contant chia</strong>
+            </Alert>
             <div dangerouslySetInnerHTML={{__html: content}}/>
             {/*<button onClick={handleInternalLinkClick}>Click me</button>*/}
             {/*<hr/>*/}

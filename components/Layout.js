@@ -6,7 +6,7 @@ export default function Layout({children}) {
 
     return (
         <div>
-            <main className= "theme-light">
+            <main className= "theme-dark">
                 {children}
             </main>
         </div>
