@@ -42,8 +42,9 @@ function MDContent({content, backLinks, handleOpenNewContent}) {
 
         <div className="markdown-rendered">
             <Alert severity="info">
-                <AlertTitle>Missing things?</AlertTitle>
-                <strong>Contant chia</strong>
+                <AlertTitle>Want to know more?</AlertTitle>
+                <strong>Contact</strong> or <strong>DM</strong> me on Discord<span><a
+                href="https://chianotess.netlify.app">useless link</a></span>
             </Alert>
             <div dangerouslySetInnerHTML={{__html: content}}/>
             {/*<button onClick={handleInternalLinkClick}>Click me</button>*/}
