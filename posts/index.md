@@ -215,3 +215,64 @@ def division(first, second)
 def edison(first, second, third)
 Use:
 output = division(number, 2)
+
+
+## Array Lists
+
+Array lists are a type of data structure that allow you to store and manipulate a collection of values. In Python, array lists are implemented using the `list` data type.
+
+- Creation: You can create an array list in Python using square brackets and separating the values with commas.
+
+```
+fruits = ["apple", "banana", "cherry"]
+```
+  
+- Accessing Elements: You can access individual elements in an array list using their index. In Python, index values start at 0. (Example for the list above: 0 is apple, 1 is banana, 2 is cherry etc.)
+
+```
+fruits = ["apple", "banana", "cherry"]
+print(fruits[0])   # Output: "apple"
+```
+   
+- Modifying Elements: You can modify individual elements in an array list by assigning a new value to their index.
+
+```
+fruits = ["apple", "banana", "cherry"]
+fruits[1] = "orange"
+print(fruits)   # Output: ["apple", "orange", "cherry"]
+```
+  
+- Adding Elements: You can add new elements to an array list using the `append()` method.
+
+```
+fruits = ["apple", "banana", "cherry"]
+fruits.append("orange")
+print(fruits)   # Output: ["apple", "banana", "cherry", "orange"]
+```
+  
+- Removing Elements: You can remove elements from an array list using the `remove()` method.
+
+```
+fruits = ["apple", "banana", "cherry"]
+fruits.remove("banana")
+print(fruits)   # Output: ["apple", "cherry"]
+```
+
+- Length: You can find the number of elements in an array list using the `len()` function.
+
+```
+fruits = ["apple", "banana", "cherry"]
+print(len(fruits))   # Output: 3
+```
+
+- Iterating: You can iterate over the elements of an array list using a `for` loop.
+
+```
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)
+# Output:
+# "apple"
+# "banana"
+# "cherry"
+```
