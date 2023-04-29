@@ -276,3 +276,54 @@ for fruit in fruits:
 # "banana"
 # "cherry"
 ```
+
+## Number/String Arrays
+
+An number array is a collection of elements of the data type "int". In Python, arrays are called lists. A list can contain elements of different data types, including strings and numbers.
+
+The "i" meaning increment is often used as a counter variable when looping through a list. It is typically used to keep track of the current index in the list.
+
+Here's an example of how to use a number list with an incrementing counter variable in Python 3.11:
+
+Code
+```
+numbers = [1, 2, 3, 4, 5]
+for i in range(len(numbers)):
+    print(numbers[i])
+```
+
+Output
+```
+1
+2
+3
+4
+5
+```
+
+This code sets up a loop that iterates through each element in the `list` object. The `range(len(list))` expression generates a sequence of integers from 0 up to, but not including, the length of the `list`. The `for` loop then assigns each integer in this sequence to the variable `i`.
+
+During each iteration of the loop, the `print` statement prints an element of the list to the console. The `i` variable is used to access each element of the list by its corresponding index position.
+
+String Arrays Example
+
+Code
+```
+fruits = ["apple", "banana", "orange", "kiwi"]
+for i in range(len(fruits)):
+    print(fruits[i])
+```
+
+Output
+```
+apple
+banana
+orange
+kiwi
+```
+
+This code creates a list of fruits called `fruits` and then sets up a loop that iterates through each fruit in the list.
+
+The `range(len(fruits))` expression generates a sequence of integers from 0 up to, but not including, the length of the `fruits` list. The `for` loop then assigns each integer in this sequence to the variable `i`.
+
+During each iteration of the loop, the `print` statement prints a fruit to the console. The `i` variable is used to access each fruit in the list by its corresponding index position.
